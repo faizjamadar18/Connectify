@@ -32,7 +32,7 @@ connectToSocket(server);
 app.use(express.json());  //Parses JSON request bodies 
 app.use(express.urlencoded({ extended: true }));   // Parses form data supporting nested objects
 app.use(cors({
-    origin: ["https://connectify-frontend-eta.vercel.app", "http://localhost:5173"],
+    origin: ["https://connectifyx.vercel.app", "http://localhost:5173"],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
     credentials: true
 }));
