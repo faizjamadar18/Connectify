@@ -3,7 +3,7 @@ import axios from "axios";
 
 const getUserProfile = async (username) => {
     try {
-        const response = await axios.post("http://localhost:3000/chat-user/user-profile", {
+        const response = await axios.post("https://connectify-lzvt.onrender.com/chat-user/user-profile", {
             username
         });
         return response.data;
@@ -15,7 +15,7 @@ const getUserProfile = async (username) => {
 
 const connectToUser = async (remoteId, userId) => {
     try {
-        const response = await axios.post('http://localhost:3000/chat-user/create-connection', {
+        const response = await axios.post('https://connectify-lzvt.onrender.com/chat-user/create-connection', {
             remoteId,
             userId
         });
@@ -30,7 +30,7 @@ const connectToUser = async (remoteId, userId) => {
 
 const getUsersData = async (usersId) => {
     try {
-        const response = await axios.post('http://localhost:3000/chat-user/live-users-data', {
+        const response = await axios.post('https://connectify-lzvt.onrender.com/chat-user/live-users-data', {
             usersId
         });
 
@@ -43,7 +43,7 @@ const getUsersData = async (usersId) => {
 const getTotalConnectionData = async (joinedUsers) => {
 
     try {
-        const response = await axios.post('http://localhost:3000/chat-user/total-Network', {
+        const response = await axios.post('https://connectify-lzvt.onrender.com/chat-user/total-Network', {
             joinedUsers
         });
 

@@ -32,7 +32,7 @@ const connectToSocket = (server) => {
 
     const io = new Server(server, {
         cors: {
-            origin: ["http://localhost:3000", "http://localhost:5173"],
+            origin: ["https://connectify-lzvt.onrender.com", "http://localhost:5173"],
             methods: ["GET", "POST", "DELETE", "PUT"],
         },
         maxHttpBufferSize: 1e8

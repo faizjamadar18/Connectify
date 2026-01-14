@@ -3,7 +3,7 @@ import axios from "axios";
 const getChatData = async (chatId) => {
 
     try {
-        const response = await axios.post('http://localhost:3000/chatRoute/user-chat', {
+        const response = await axios.post('https://connectify-lzvt.onrender.com/chatRoute/user-chat', {
             chatId
         });
 
