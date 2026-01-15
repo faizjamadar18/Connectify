@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState, forwardRef } from 'react';
-import UserContext from './../context/UserContext';
-import { connectToUser, getTotalConnectionData } from './../services/userchatService';
+import UserContext from '../context/UserContext';
+import { connectToUser, getTotalConnectionData } from '../services/userchatService';
 import { useSnackbar } from 'notistack';
 import LeftSidebar from './SidebarLayout/LeftSidebar';
 import { Link, useNavigate } from 'react-router-dom';

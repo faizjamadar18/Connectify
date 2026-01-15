@@ -10,7 +10,7 @@ import Register from './pages/userAuthentication/Register';
 // import UserProfile from './pages/networkProfile/UserProfile';
 // import CommunityProfile from './pages/networkProfile/CommunityProfile';
 // import LiveUserList from './components/NetworkList/LiveUserList';
-import JoinComponent from './components/JoinComponent';
+import JoinComponent from './components_/JoinComponent';
 // import StatusPage from './pages/StatusPage';
 // import StatusList from './components/NetworkList/StatusList';
 // import AddStatus from './pages/AddStatus';
@@ -20,7 +20,7 @@ import VideoCall from './pages/VideoCall';
 import HomePage from './pages/HomePage';
 import UserProfile from './pages/networkProfile/UserProfile';
 import NotFound from './pages/NotFound';
-import LiveUserList from './components/NetworkList/LiveUserList';
+import LiveUserList from './components_/NetworkList/LiveUserList';
 import VideoCallContextProvider from './context/VideoCallContextProvider';
 
 

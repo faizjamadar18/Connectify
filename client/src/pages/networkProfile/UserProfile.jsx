@@ -6,7 +6,7 @@ import {  updateUserProfileImage } from '../../services/userService';
 
 import UserContext from '../../context/UserContext';
 
-import LeftSidebar from '../../components/SidebarLayout/LeftSidebar';
+import LeftSidebar from '../../components_/SidebarLayout/LeftSidebar';
 
 import { Avatar, CircularProgress } from '@mui/material';
 

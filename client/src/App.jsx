@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from 'react';
-
 import { Dialog, DialogActions, DialogContent, DialogTitle, Button, Typography } from "@mui/material";
 
 import ChatContextProvider from './context/ChatContextProvider';

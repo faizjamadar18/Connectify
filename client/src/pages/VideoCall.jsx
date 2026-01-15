@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import UserContext from '../context/UserContext';
-import VideoHome from '../components/VideoCallComponent/VideoHome';
+import VideoHome from '../components_/VideoCallComponent/VideoHome';
 
 export default function VideoCall() {
     const { id } = useParams();

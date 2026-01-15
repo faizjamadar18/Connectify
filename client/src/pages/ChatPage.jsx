@@ -1,11 +1,11 @@
 import React, { useContext, useEffect } from "react";
-import UserList from "../components/UserList";
-import ChatRoom from "../components/ChatComponent/ChatRoom";
+import UserList from "../components_/UserList";
+import ChatRoom from "../components_/ChatComponent/ChatRoom";
 import { useNavigate, useParams } from "react-router-dom";
 import { useSnackbar } from "notistack";
 import UserContext from "../context/UserContext";
 import ChatContext from "../context/ChatContext";
-import LeftSidebar from "../components/SidebarLayout/LeftSidebar";
+import LeftSidebar from "../components_/SidebarLayout/LeftSidebar";
 import Dialog from '@mui/material/Dialog';
 
 

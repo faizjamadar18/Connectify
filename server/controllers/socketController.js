@@ -32,7 +32,7 @@ const connectToSocket = (server) => {
 
     const io = new Server(server, {
         cors: {
-            origin: ["https://connectify-lzvt.onrender.com", "https://connectifyx.vercel.app"],
+            origin: ["https://connectifyx.vercel.app", "http://localhost:5173"],
             methods: ["GET", "POST", "DELETE", "PUT"],
         },
         maxHttpBufferSize: 1e8
