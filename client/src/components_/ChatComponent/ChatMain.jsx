@@ -105,10 +105,10 @@ export function ChatMain() {
                                 </div>
                             )}
 
-                            <div className={`bg-[#000000c2] p-2 border border-gray-700 mt-4 rounded-b-lg ${loginUser?.username === data?.sender?.username ? 'rounded-s-lg me-2 ms-10' : 'rounded-e-lg me-10 ms-2'}`}>
+                            <div className={`bg-[#1F1F1F] p-2 mt-4 rounded-b-lg ${loginUser?.username === data?.sender?.username ? 'rounded-s-lg me-2 ms-10' : 'rounded-e-lg me-10 ms-2'}`}>
 
                                 {/* Message Header */}
-                                <div className="text-[0.8rem] space-x-2 flex justify-between border-b border-gray-700 pb-1 text-gray-400">
+                                <div className="text-[0.8rem] space-x-2 flex justify-between border-b border-neutral-700 pb-1 text-gray-400">
                                     <p>{data?.sender?.username ?? 'Unknown'}</p>
                                     <p className='pe-2'>{formatTime(data?.createdAt) ?? 'Just now'}</p>
                                 </div>

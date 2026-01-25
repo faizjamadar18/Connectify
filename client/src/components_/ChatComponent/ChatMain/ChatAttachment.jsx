@@ -45,7 +45,7 @@ export default function ChatAttachment({ data }) {
                 </div>
                 <div className='flex justify-between items-center'>
                     <p className='text-sm'>Download PDF</p>
-                    <a href={`${pdf}?fl_attachment`} target='_blank' download className="text-blue-500 hover:text-blue-700 border-3 rounded-full w-7 h-7 flex justify-center items-center">
+                    <a href={`${pdf}?fl_attachment`} target='_blank' download className="text-orange-500 hover:text-orange-700 border-3 rounded-full w-7 h-7 flex justify-center items-center">
                         <DownloadOutlinedIcon style={{ fontSize: '1.2rem' }} />
                     </a>
                 </div>

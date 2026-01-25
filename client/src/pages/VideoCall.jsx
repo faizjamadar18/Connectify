@@ -9,7 +9,7 @@ export default function VideoCall() {
 
     if (!onlineUsers.includes(id)) {
         return (
-            <div className="w-full h-full p-4 flex justify-center items-center bg-gradient-to-r from-black to-gray-800">
+            <div className="w-full h-full p-4 flex justify-center items-center bg-black">
                 <h1 className='p-3 text-xl rounded bg-black/50 text-white text-center shadow-md'>
                     This user is currently offline and unavailable for a video call.
                 </h1>

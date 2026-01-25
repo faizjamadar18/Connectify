@@ -26,7 +26,7 @@ const onlineUsers = new Map();
 // }
 
 const ongoingCalls = new Set();
-
+ongoingCalls.clear();
 
 const connectToSocket = (server) => {
 

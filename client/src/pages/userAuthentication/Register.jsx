@@ -53,7 +53,7 @@ export default function Register() {
     };
 
     return (
-        <div className="text-white h-screen w-full flex items-center justify-center min-h-screen bg-gradient-to-r from-black to-gray-800">
+        <div className="text-white h-screen w-full flex items-center justify-center min-h-screen bg-black">
             <div className="m-5 w-full max-w-md shadow-lg rounded-xl">
                 <h2 className="text-3xl font-bold text-center">Register</h2>
                 <form className="mt-6" onSubmit={handleSubmit}>
@@ -65,7 +65,7 @@ export default function Register() {
                             value={formData.email}
                             onChange={handleChange}
                             required
-                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-400 focus:outline-none"
                         />
                     </div>
                     <div className="mb-4">
@@ -76,7 +76,7 @@ export default function Register() {
                             value={formData.username}
                             onChange={handleChange}
                             required
-                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-400 focus:outline-none"
                         />
                     </div>
                     <div className="mb-4 relative">
@@ -87,7 +87,7 @@ export default function Register() {
                             value={formData.password}
                             onChange={handleChange}
                             required
-                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none pr-10"
+                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-400 focus:outline-none pr-10"
                         />
                         {/* Toggle Password Visibility */}
                         <button
@@ -100,14 +100,14 @@ export default function Register() {
                     </div>
                     <button
                         type={isLoading ? "button" : "submit"}
-                        className={`flex justify-center items-center space-x-2 w-full px-4 py-2 mt-2 text-white rounded-lg transition duration-300 ${isLoading ? "bg-gray-800" : "bg-blue-500 hover:bg-blue-600"}`}
+                        className={`flex justify-center items-center space-x-2 w-full px-4 py-2 mt-2 text-white rounded-lg transition duration-300 ${isLoading ? "bg-gray-800" : "bg-orange-600 hover:bg-orange-700"}`}
                     >
                         {isLoading && <CircularProgress size="25px" />}
                         <span>Register</span>
                     </button>
                 </form>
                 <p className="mt-4 text-center">
-                    Already have an account? <Link to="/login" className="text-blue-500">Login</Link> / <Link to={'/'} className="text-blue-500">Home</Link>
+                    Already have an account? <Link to="/login" className="text-orange-500">Login</Link> / <Link to={'/'} className="text-orange-500">Home</Link>
                 </p>
             </div>
         </div>

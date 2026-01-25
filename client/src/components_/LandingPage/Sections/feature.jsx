@@ -14,13 +14,13 @@ const Features = () => {
 
                 <AnimationContainer animation="fadeUp" delay={0.3}>
                     <h2 className="text-2xl md:text-4xl lg:text-5xl font-medium !leading-tight text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-400">
-                        Manage properties smarter
+                        Connect Without Compromise
                     </h2>
                 </AnimationContainer>
 
                 <AnimationContainer animation="fadeUp" delay={0.4}>
                     <p className="text-sm md:text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto">
-                        Experience the future of real estate with our all-in-one platform for seamless property management.
+                        A centralized hub for every conversation. Monitor quality, manage chats, and connect instantly—all in one place.
                     </p>
                 </AnimationContainer>
             </div>
@@ -41,11 +41,11 @@ const Features = () => {
                                     </div>
                                 </AnimationContainer>
                                 <AnimationContainer animation="fadeUp" delay={0.7}>
-                                    <div className="relative h-60">
+                                    <div className="relative h-60 flex justify-center">
                                         <img
                                             src={FEATURES[0].image}
                                             alt={FEATURES[0].title}
-                                            fill
+                                            
                                             className="object-contain"
                                         />
                                     </div>
@@ -68,11 +68,11 @@ const Features = () => {
                                     </div>
                                 </AnimationContainer>
                                 <AnimationContainer animation="fadeUp" delay={0.8}>
-                                    <div className="relative h-48">
+                                    <div className="relative h-48 flex justify-center">
                                         <img
                                             src={FEATURES[1].image}
                                             alt={FEATURES[1].title}
-                                            fill
+                                       
                                             className="object-contain"
                                         />
                                     </div>
@@ -97,11 +97,11 @@ const Features = () => {
                                     </div>
                                 </AnimationContainer>
                                 <AnimationContainer animation="fadeUp" delay={0.9}>
-                                    <div className="relative h-48">
+                                    <div className="relative h-48 flex justify-center">
                                         <img
                                             src={FEATURES[2].image}
                                             alt={FEATURES[2].title}
-                                            fill
+                                    
                                             className="object-contain"
                                         />
                                     </div>
@@ -124,11 +124,11 @@ const Features = () => {
                                     </div>
                                 </AnimationContainer>
                                 <AnimationContainer animation="fadeUp" delay={1}>
-                                    <div className="relative h-48">
+                                    <div className="relative h-48 flex justify-center">
                                         <img
                                             src={FEATURES[3].image}
                                             alt={FEATURES[3].title}
-                                            fill
+                                       
                                             className="object-contain"
                                         />
                                     </div>

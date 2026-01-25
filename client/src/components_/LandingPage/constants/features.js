@@ -1,26 +1,26 @@
 export const FEATURES = [
     {
-        title: "Smart property management",
-        description: "Manage multiple properties effortlessly with our AI-powered dashboard. Track rent payments and maintenance schedules.",
-        image: "/images/f1.svg",
+        title: "Unified Communication Hub",
+        description: "Manage direct messages, group chats, and video calls effortlessly with our centralized dashboard. Track active sessions and call history in one view",
+        image: "/f1.svg",
         size: "large"
     },
     {
-        title: "Real-time analytics",
-        description: "Track property views, leads, and revenue through real-time analytics.",
-        image: "/images/f2.svg",
+        title: "Live Connection Quality",
+        description: "Monitor stream health, latency, and user engagement through real-time performance analytics",
+        image: "/f2.svg",
         size: "small"
     },
     {
-        title: "Smart transaction hub",
-        description: "Handle property transactions securely in one place, from offers to digital contracts and payments.",
-        image: "/images/f3.svg",
+        title: "Secure Media Relay",
+        description: "Handle file transfers and data syncing securely in one place, from encrypted messages to large video payloads.",
+        image: "/f3.svg",
         size: "large"
     },
     {
-        title: "Instant property valuation",
-        description: "Get real-time market valuations powered by AI and big data for informed pricing decisions.",
-        image: "/images/f4.svg",
+        title: "Smart Presence Detection",
+        description: "Get real-time availability status powered by AI to instantly identify online contacts and optimal calling times.",
+        image: "/f4.svg",
         size: "small"
     },
 ];

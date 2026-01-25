@@ -1,44 +1,44 @@
 export const TESTIMONIALS = [
     {
-        content: "The AI-powered valuation tool helped me price my properties accurately. Closed deals 30% faster than traditional methods.",
+        content: "The low-latency video calls completely changed our daily standups. We communicate with our remote team across time zones without a second of lag.",
         author: "Emma",
-        role: "Real Estate Agent",
-        image: "/images/person-one.jpg",
+        role: "Project Manager",
+        image: "/person-one.jpg",
         rating: 5
     },
     {
-        content: "Virtual tours and 3D viewing features saved me countless hours. Made property hunting efficient and enjoyable from anywhere.",
+        content: "Finally, a screen sharing tool that handles high-resolution code reviews smoothly. The clarity is unmatched, making pair programming feel local.",
         author: "James",
-        role: "Property Buyer",
-        image: "/images/person-two.jpg",
+        role: "Senior Developer",
+        image: "/person-two.jpg",
         rating: 5
     },
     {
-        content: "Managing multiple properties is now seamless. The automated maintenance tracking and tenant portal are game-changers.",
+        content: "Managing multiple community channels is effortless. The real-time messaging and moderation tools help keep our discussions organized and active.",
         author: "Sofia",
-        role: "Property Manager",
-        image: "/images/person-three.jpg",
+        role: "Community Lead",
+        image: "/person-three.jpg",
         rating: 5
     },
     {
-        content: "The document handling system is brilliant. Digital contracts and secure payments have simplified my rental processes.",
+        content: "I value privacy above all else. Knowing my direct messages and file transfers are end-to-end encrypted gives me total peace of mind.",
         author: "Lucas",
-        role: "Property Owner",
-        image: "/images/person-four.jpeg",
+        role: "Cybersecurity Consultant",
+        image: "/person-four.jpeg",
         rating: 5
     },
     {
-        content: "Market analytics and trend reports help me make data-driven decisions. Perfect tool for investment planning.",
+        content: "The connection stability is rock solid even on mobile data. I take client calls on the go and never have to worry about dropping the stream.",
         author: "Isabella",
-        role: "Property Investor",
-        image: "/images/person-five.jpeg",
+        role: "Sales Director",
+        image: "/person-five.jpeg",
         rating: 5
     },
     {
-        content: "Tenant screening and rental management features are exceptional. Reduced my vacancy rates significantly.",
+        content: "The noise suppression feature is a game-changer. My voice comes through crystal clear during streams, even with background noise in my apartment.",
         author: "Oliver",
-        role: "Landlord",
-        image: "/images/person-six.jpg",
+        role: "Content Creator",
+        image: "/person-six.jpg",
         rating: 5
     }
-]; 
+];

@@ -115,15 +115,15 @@ export default function LiveUserList() {
 
   return (
     <>
-      <div className="bg-gradient-to-r from-black to-gray-800 md:bg-none">
+      <div className="bg-black">
         <LeftSidebar />
       </div>
 
-      <div className="flex-1 bg-gradient-to-r from-black to-gray-800 h-full overflow-auto text-white">
-        <header className="h-fit sticky top-0 p-4 md:flex items-center justify-center w-full z-10 bg-gradient-to-r from-black to-gray-800 sm:space-x-2">
+      <div className="flex-1 bg-black h-full overflow-auto text-white">
+        <header className="h-fit sticky top-0 p-4 md:flex items-center justify-center w-full z-10 bg-black sm:space-x-2">
           <div className="flex justify-between items-center">
             <h1
-              className="text-2xl text-orange-500 flex items-center md:border md:px-3 rounded"
+              className="text-2xl text-orange-500 flex items-center md:px-3 rounded"
               style={{ fontWeight: "800" }}
             >
               Live Users
@@ -145,7 +145,7 @@ export default function LiveUserList() {
                 placeholder="Search users..."
                 className="flex-1 p-1 text-sm md:w-[20rem] lg:w-[29rem]"
               />
-              <button className="py-1 px-2 text-gray-500 bg-gray-800 rounded-e hover:bg-gray-700 hover:text-white cursor-pointer">
+              <button className="py-1 px-2 text-neutral-500 bg-neutral-800 rounded-e hover:bg-neutral-700 hover:text-white cursor-pointer">
                 <SearchIcon sx={{ fontSize: "1.3rem" }} />
               </button>
             </div>
@@ -165,7 +165,7 @@ export default function LiveUserList() {
                 {filteredUsers.map((user) => (
                   <li
                     key={user?._id}
-                    className="p-3 bg-[#80808012] hover:bg-[#80808024] rounded-lg transition"
+                    className="p-3 bg-[#1F1F1F] hover:bg-neutral-900 rounded-lg transition"
                   >
                     <div className="flex items-center mb-3">
                       <Avatar
@@ -189,14 +189,14 @@ export default function LiveUserList() {
                       {connectedUsersMap[user._id] ? (
                         <Link
                           to={`/u/chatting/${connectedUsersMap[user._id]}`}
-                          className="border text-sm rounded px-3 py-1 text-gray-500 hover:text-orange-500 cursor-pointer"
+                          className="border text-sm rounded px-3 py-1 text-neutral-500 hover:text-orange-500 cursor-pointer"
                         >
                           View
                         </Link>
                       ) : (
                         <button
                           onClick={() => handleUserConnection(user?._id)}
-                          className="border text-sm rounded px-3 py-1 text-gray-500 hover:text-orange-500 cursor-pointer flex items-center"
+                          className="border text-sm rounded px-3 py-1 text-neutral-500 hover:text-orange-500 cursor-pointer flex items-center"
                         >
                           <PersonAdd
                             sx={{ fontSize: "1rem" }}

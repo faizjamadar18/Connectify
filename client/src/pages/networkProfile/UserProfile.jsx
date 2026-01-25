@@ -126,7 +126,7 @@ export default function UserProfile() {
 
                         return (
                             <li key={connection._id}>
-                                <Link to={`/u/chatting/${connection?._id}`} className='block p-3 border border-gray-700 rounded-lg shadow-sm hover:bg-[#80808023] cursor-pointer transition'>
+                                <Link to={`/u/chatting/${connection?._id}`} className='block p-3 border border-neutral-800 rounded-lg shadow-sm hover:bg-[#80808023] cursor-pointer transition'>
                                     <div className="flex items-center gap-4 ">
                                         <Avatar src={chatUser.image} alt={chatUser.username} className="w-12 h-12" />
                                         <h3 className="text-lg font-semibold line-clamp-1">{chatUser?.username}</h3>
@@ -146,9 +146,9 @@ export default function UserProfile() {
     };
 
     return (
-        <div className='w-full h-full overflow-auto bg-gradient-to-r from-black to-gray-800'>
+        <div className='w-full h-full overflow-auto bg-black'>
 
-            <div className='block md:hidden sticky top-0 bg-gradient-to-r from-black to-gray-800 z-10'>
+            <div className='block md:hidden sticky top-0 bg-black z-10'>
                 <LeftSidebar />
             </div>
 
@@ -206,7 +206,7 @@ export default function UserProfile() {
                             }
                             <div className="grid grid-cols-1 justify-between mt-6 space-x-2">
                                 <Link to={'/u/chatting'}>
-                                    <div className="text-center border border-gray-500 rounded py-2 md:px-2 px-1 bg-[#80808023]">
+                                    <div className="text-center border border-neutral-700 rounded py-2 md:px-2 px-1 bg-[#80808023]">
                                         <p className="text-xl font-bold">{userProfile.connections.length}</p>
                                         <p className="text-gray-400 break-words">Connections</p>
                                     </div>

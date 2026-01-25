@@ -47,10 +47,10 @@ export default function UserList() {
                         type="text"
                         onChange={(e) => setSearchQuery(e.target.value)}
                         value={searchQuery}
-                        className="w-full py-1 px-2 rounded-s bg-gray-800 text-gray-200"
+                        className="w-full py-1 px-2 rounded-s bg-neutral-800 text-gray-200"
                         placeholder="Search"
                     />
-                    <button className="py-1 px-2 bg-gray-600 rounded-e text-gray-400 hover:text-white cursor-pointer">
+                    <button className="py-1 px-2 bg-neutral-600 rounded-e text-gray-400 hover:text-white cursor-pointer">
                         <SearchRoundedIcon />
                     </button>
                 </div>

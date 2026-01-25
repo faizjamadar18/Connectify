@@ -55,7 +55,7 @@ export default function VideoHome() {
                     // Show the live camera stream inside the video element
                     localVideoRef.current.srcObject = stream;
 
-                    // Check if a call connection with another user already exists
+                    // Check if a call connection with another user already exists  
                     if (peerConnection.current) {
 
                         // Send each camera and microphone track to the other user

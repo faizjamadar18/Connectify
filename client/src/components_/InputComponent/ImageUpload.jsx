@@ -32,7 +32,7 @@ export default function ImageUpload() {
     return (
         <div className="text-sm w-full mb-3 text-white">
             <div className="flex justify-between items-center mb-2 space-x-3 ">
-                <h1 style={{ fontWeight: "700" }}>Select Image</h1>
+                <h1 style={{ fontWeight: "700" }} className="text-white">Select Image</h1>
                 <button onClick={handleHideComponent} className="h-7 w-7 rounded hover:bg-[#80808045] cursor-pointer">
                     <CloseIcon style={{ fontSize: "1.2rem" }} />
                 </button>

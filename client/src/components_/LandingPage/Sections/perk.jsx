@@ -1,9 +1,15 @@
 import { PERKS } from '../constants/perk';
 import { cn } from '@/lib/utils';
 
+import { Chat } from "@mui/icons-material";
+import { VideoCall } from "@mui/icons-material";
+import { OnlinePrediction } from "@mui/icons-material";
+import { Hd } from "@mui/icons-material";
+
 import AnimationContainer from '../global/AnimateContainer';
 import Wrapper from '../global/Wrapper';
 import SectionBadge from '@/components/ui/section-badge';
+import React from 'react';
 
 const Perks = () => {
     return (
@@ -23,7 +29,7 @@ const Perks = () => {
 
                 <AnimationContainer animation="fadeUp" delay={0.4}>
                     <p className="text-sm md:text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto">
-                        Seamlessly integrated tools for effortless property management.
+                        Seamlessly integrated tools for effortless communication management.
                     </p>
                 </AnimationContainer>
             </div>
@@ -34,8 +40,10 @@ const Perks = () => {
                         <div
                             key={index}
                             className={cn(
-                                "flex items-center p-2 md:p-16",
-                                index % 2 === 0 ? "justify-end" : "justify-start"
+                                "flex items-center p-8 md:p-16",
+                                index % 2 === 0 ? "justify-end border-r border-neutral-800" : "justify-start",
+                                index === 2 && "border-t border-neutral-800",
+                                index === 3 && "border-t border-neutral-800",
                             )}
                         >
                             <AnimationContainer
@@ -44,13 +52,11 @@ const Perks = () => {
                             >
                                 <div className="flex flex-col items-center text-center gap-4">
                                     <div className="size-12 lg:size-16 rounded-lg lg:rounded-2xl bg-neutral-900 flex items-center justify-center">
-                                        <img
-                                            src={perk.icon}
-                                            alt={perk.title}
-                                            width={1024}
-                                            height={1024}
-                                            className="size-8 lg:size-10"
-                                        />
+                                        {React.createElement(perk.icon, {
+                                            style: { fontSize: "2rem", color: "#F55916"},
+                                        })}
+
+
                                     </div>
                                     <div className="space-y-2">
                                         <h3 className="text-lg md:text-xl font-medium">

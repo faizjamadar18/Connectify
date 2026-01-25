@@ -95,7 +95,7 @@ export default function JoinComponent() {
                 {filteredData
                     .filter((item) => item?._id !== loginUser?._id)
                     .map((item) => (
-                        <li key={item?._id} className="p-4 bg-gray-900 hover:bg-gray-800 rounded-lg transition duration-300 shadow-md border border-gray-700 flex space-x-3">
+                        <li key={item?._id} className="p-4 bg-[#1F1F1F] hover:bg-gray-800 rounded-lg transition duration-300 shadow-md border border-gray-700 flex space-x-3">
 
                             <Link to={`/u/profile/${item?.username}`}>
                                 <Avatar
@@ -118,7 +118,7 @@ export default function JoinComponent() {
 
                                     <div className="mt-3 flex justify-end">
                                         <button
-                                            onClick={()=>handleUserConnection(item?._id)} className="text-sm rounded-lg px-4 py-2 text-gray-300 hover:text-white bg-gray-700 hover:bg-orange-500 transition flex items-center gap-2 cursor-pointer">
+                                            onClick={()=>handleUserConnection(item?._id)} className="text-sm rounded-lg px-4 py-2 text-gray-300 hover:text-white bg-neutral-900 hover:bg-orange-500 transition flex items-center gap-2 cursor-pointer">
                                             <PersonAdd sx={{ fontSize: "1.2rem" }} />
                                             <span>Connect</span>
                                         </button>
@@ -134,32 +134,28 @@ export default function JoinComponent() {
 
     return (
         <>
-            <div className='bg-gradient-to-r from-black to-gray-800 md:bg-none'>
+            <div className='bg-black md:bg-none'>
                 <LeftSidebar />
             </div>
 
-            <div className='flex-1 bg-gradient-to-r from-black to-gray-800 h-full overflow-auto'>
+            <div className='flex-1 bg-black h-full overflow-auto'>
 
-                <header className='h-fit sticky top-0 p-4 md:flex items-center justify-center w-full z-10 bg-gradient-to-r from-black to-gray-800 sm:space-x-2'>
+                <header className='h-fit sticky top-0 p-4 md:flex items-center justify-center w-full z-10 bg-black sm:space-x-2'>
                     <div className='flex justify-between items-center'>
-                        <h1 className='text-2xl text-orange-500 flex items-center md:border md:px-3 rounded'
+                        <h1 className='text-2xl text-orange-500 flex items-center md:px-3 rounded'
                             style={{ fontWeight: "800" }}>
                             Join
                         </h1>
-                        <div className='flex md:hidden text-gray-300 items-center space-x-1'>
-                            <span className='text-sm'>{filteredData?.length || 0}</span>
-                            <Group sx={{ fontSize: '1.2rem' }} />
-                        </div>
                     </div>
 
                     <div className='flex space-x-2 w-full md:w-fit mt-2 md:mt-0'>
-                        <div className='flex flex-nowrap border border-gray-500 rounded flex-1'>
+                        <div className='flex flex-nowrap border border-neutral-700 rounded flex-1'>
                             <input type="text"
                                 value={searchQuery}
                                 onChange={(e) => setSearchQuery(e.target.value)}
                                 placeholder="Search users..."
-                                className='flex-1 p-1 text-sm md:w-[22rem] lg:w-[31rem]' />
-                            <button className='py-1 px-2 text-gray-500 bg-gray-800 rounded-e hover:bg-gray-700 hover:text-white cursor-pointer'>
+                                className='flex-1 p-1 text-sm md:w-[22rem] lg:w-[31rem] text-white' />
+                            <button className='py-1 px-2 text-gray-500 bg-neutral-800 rounded-e hover:bg-neutral-700 hover:text-white cursor-pointer'>
                                 <Search sx={{ fontSize: "1.3rem" }} />
                             </button>
                         </div>

@@ -28,10 +28,10 @@ export default function PdfUpload() {
     }
 
     return (
-        <div className="text-sm w-full mb-3">
+        <div className="text-sm w-full mb-3 text-white">
 
-            <div className="flex justify-between items-center mb-2 space-x-3">
-                <h1 style={{ fontWeight: "700" }}>Select PDF</h1>
+            <div className="flex justify-between items-center mb-2 space-x-3 text-white">
+                <h1 style={{ fontWeight: "700" }} className="text-white">Select PDF</h1>
                 <button onClick={handleHideComponent} className="h-7 w-7 rounded hover:bg-[#80808045] cursor-pointer">
                     <CloseIcon style={{ fontSize: "1.2rem" }} />
                 </button>
@@ -40,7 +40,7 @@ export default function PdfUpload() {
             <input type="file" accept="application/pdf" onChange={handleFileChange} className="border border-gray-500 w-full rounded px-2 py-1" />
             {
                 inputFile && <button className="mt-2">
-                    <a href={inputFile} target="_blank" rel="noopener noreferrer" className="pt-2 mt-2 text-blue-500 underline">
+                    <a href={inputFile} target="_blank" rel="noopener noreferrer" className="pt-2 mt-2 text-orange-500 underline">
                         Open Selected PDF
                     </a>
                 </button>

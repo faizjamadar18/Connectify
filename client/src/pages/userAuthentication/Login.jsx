@@ -31,7 +31,7 @@ export default function Login() {
 
             if (response?.status === 200) {
                 localStorage.setItem('authToken', response.data.token);
-                enqueueSnackbar(response.data.message || 'User login successfully.', { variant: "success" });
+                enqueueSnackbar(response.data.message || 'User login successfully.', { variant: "success" ,autoHideDuration: 500 });
                 navigate("/");
             } else {
                 enqueueSnackbar(response?.error || 'Network error, please try again.', { variant: "error" });
@@ -44,7 +44,7 @@ export default function Login() {
     };
 
     return (
-        <div className="h-screen w-full text-white flex items-center justify-center min-h-screen bg-gradient-to-r from-black to-gray-800">
+        <div className="h-screen w-full text-white flex items-center justify-center min-h-screen bg-black">
             <div className="p-3 w-full max-w-md shadow-lg rounded-xl">
                 <h2 className="text-4xl text-center font-bold">Login</h2>
                 <form className="mt-6" onSubmit={handleSubmit}>
@@ -56,7 +56,7 @@ export default function Login() {
                             value={formData.username}
                             onChange={handleChange}
                             required
-                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-400 focus:outline-none"
                         />
                     </div>
                     <div className="mb-4 relative">
@@ -67,7 +67,7 @@ export default function Login() {
                             value={formData.password}
                             onChange={handleChange}
                             required
-                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none pr-10"
+                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-400 focus:outline-none pr-10"
                         />
                         {/* Show/Hide Password Button */}
                         <button
@@ -80,14 +80,18 @@ export default function Login() {
                     </div>
                     <button
                         type={isLoading ? "button" : "submit"}
-                        className={`flex justify-center items-center space-x-2 w-full px-4 py-2 mt-2 text-white rounded-lg transition duration-300 ${isLoading ? "bg-gray-800" : "bg-blue-500 hover:bg-blue-600"}`}
+                        className={`flex justify-center items-center space-x-2 w-full px-4 py-2 mt-2 text-white rounded-lg transition duration-300 ${isLoading ? "bg-gray-800" : "bg-orange-600 hover:bg-orange-700"}`}
                     >
                         {isLoading && <CircularProgress size="25px" />}
                         <span>Login</span>
                     </button>
                 </form>
                 <p className="mt-4 text-center">
-                    Don't have an account? <Link to="/register" className="text-blue-500">Register</Link> / <Link to={'/'} className="text-blue-500">Home</Link>
+                    Don't have an account? <Link to="/register" className="text-orange-500">Register</Link> / <Link to={'/'} className="text-orange-500">Home</Link>
+                </p>
+
+                <p className="text-center text-neutral-700">
+                    Demo- Email: faiz@gmail.com, Password :faizjamadar
                 </p>
             </div>
         </div>

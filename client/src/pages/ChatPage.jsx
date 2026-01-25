@@ -47,11 +47,11 @@ export default function ChatPage() {
         <>
             <LeftSidebar />
             <div className="flex-1 flex h-full">
-                <div className="h-full flex-1 md:flex-none flex flex-col md:w-80 lg:w-90 md:border-e border-gray-700">
+                <div className="h-full flex-1 md:flex-none flex flex-col md:w-80 lg:w-90 border-r border-neutral-800">
                     <UserList />
                 </div>
                 <div
-                    className={`hidden md:flex h-full flex-1 flex-col bg-no-repeat bg-cover bg-gradient-to-bl from-purple-600 to-teal-400`}
+                    className={`hidden md:flex h-full flex-1 flex-col bg-no-repeat bg-cover bg-[#141414]`}
                     style={loginUser?.backgroundImage && loginUser?.backgroundImage !== 'null' ? { backgroundImage: `url(${loginUser?.backgroundImage})` } : {}}
                 >
                     <ChatRoom />
@@ -60,7 +60,7 @@ export default function ChatPage() {
 
             <Dialog fullScreen open={isDialogOpen} className="block md:hidden" >
                 <div
-                    className={`text-white flex h-full flex-1 flex-col bg-no-repeat bg-cover bg-gradient-to-bl from-purple-600 to-teal-400`}
+                    className={`text-white flex h-full flex-1 flex-col bg-no-repeat bg-cover bg-[#141414]`}
                     style={loginUser?.backgroundImage && loginUser?.backgroundImage !== 'null'
                         ? { backgroundImage: `url(${loginUser?.backgroundImage})` }
                         : {}}

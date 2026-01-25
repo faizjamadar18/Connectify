@@ -1,23 +1,27 @@
+import { Chat } from "@mui/icons-material";
+import { VideoCall } from "@mui/icons-material";
+import { Group } from "@mui/icons-material";
+import { Hd } from "@mui/icons-material";
 
 export const PERKS = [
     {
         title: "Property Sync",
-        description: "Sync listings across platforms instantly.",
-        icon: "/icons/perk-one.svg"
+        description: "Send and receive messages in real-time with zero latency. Powered by Socket.io.",
+        icon: Chat
     },
     {
         title: "Smart Analytics",
-        description: "Track performance with realtime insights.",
-        icon: "/icons/perk-two.svg"
+        description: "Connect face-to-face instantly. Seamless peer-to-peer video streaming. using WebRTC",
+        icon: VideoCall
     },
     {
         title: "Doc Manager",
-        description: "Handle documents and esigns easily.",
-        icon: "/icons/perk-three.svg"
+        description: "Experience crystal clear 1080p video clarity without the lag.",
+        icon: Hd
     },
     {
         title: "Lead Connect",
-        description: "Manage all property inquiries centrally.",
-        icon: "/icons/perk-four.svg"
+        description: "Create rooms, invite friends, and manage your community in one place",
+        icon: Group
     }
 ]; 

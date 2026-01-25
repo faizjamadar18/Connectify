@@ -134,7 +134,7 @@ export default function ChatRoom() {
             <div className='h-full flex justify-center text-center items-center p-3'>
                 <div className='p-3 rounded bg-[#000000ab] space-y-1'>
                     <h1 className='text-xl'>You have not joined this {remoteUser ? 'user chat' : 'group'}</h1>
-                    <Link to={'/u/join-requests'} className='text-blue-500 hover:text-blue-700'>
+                    <Link to={'/u/join-requests'} className='text-orange-500 hover:text-orange-700'>
                         Click to join
                     </Link>
                 </div>

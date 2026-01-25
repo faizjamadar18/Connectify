@@ -52,7 +52,7 @@ export default function VideoUpload() {
     }, [inputFile]);
 
     return (
-        <div className="text-sm w-full mb-3">
+        <div className="text-sm w-full mb-3 text-white">
             <div className="flex justify-between items-center mb-2 space-x-3">
                 <h1 style={{ fontWeight: "700" }}>Select Video</h1>
                 <button onClick={handleHideComponent} className="h-7 w-7 rounded hover:bg-[#80808045] cursor-pointer">
