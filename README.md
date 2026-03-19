@@ -8,7 +8,7 @@ Connectify is a full-stack real-time communication platform built with the **MER
 ## 🔗 Live Demo
 
 🌐 **Live Link:** [Connectify Live Project](https://your-live-link.com)  
-🎥 **Demo Video (YouTube):** [Watch Demo](https://youtube.com/your-demo-video)
+🎥 **Demo Video (YouTube):** [Watch Demo](https://www.youtube.com/watch?v=sB_HajZ6AN0)
 
 ---
 
@@ -72,7 +72,7 @@ Connectify is a full-stack real-time communication platform built with the **MER
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/connectify.git
+git clone https://github.com/faizjamadar18/Connectify.git
 
 # Move into the project folder
 cd connectify
