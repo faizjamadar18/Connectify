@@ -7,7 +7,7 @@ Connectify is a full-stack real-time communication platform built with the **MER
 
 ## 🔗 Live Demo
 
-🌐 **Live Link:** [Connectify Live Project](https://your-live-link.com)  
+🌐 **Live Link:** [Connectify Live Project](https://connectifyx.vercel.app)  
 🎥 **Demo Video (YouTube):** [Watch Demo](https://www.youtube.com/watch?v=sB_HajZ6AN0)
 
 ---
